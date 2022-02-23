@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFINN Demonstration</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>AFINN Demonstration</h1>
+      <div class="grid-container">
+        <div class="grid-item">
+          <h2>Free-form Text Input</h2>
+          <textarea id="text-input" rows="4" cols="50">
+People expect their life to go the same way as others. But no one care for the hardships the other person has gone through to make things beautiful.</textarea
+          >
+        </div>
+        <div class="grid-item">
+          <h2>Overall Score</h2>
+          <div id="score">-</div>
+        </div>
+      </div>
+      <div>
+        <h2>Example Sentences</h2>
+        <table id="example-sentence-table"></table>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

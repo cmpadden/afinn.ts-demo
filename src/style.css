@@ -1,0 +1,65 @@
+:root {
+  --teal-green: #4297a0;
+  --ivory: #f4eae6;
+  --coral: #e57f84;
+  --misty-blue: #2f5061;
+}
+
+#app {
+}
+
+body {
+  padding: 20px;
+  background: var(--ivory);
+  color: var(--misty-blue);
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  color: var(--misty-blue);
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid var(--misty-blue);
+  padding: 8px;
+}
+
+*.lang,
+*.sentence {
+  text-align: left;
+}
+
+*.score {
+  text-align: right;
+}
+
+table tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: var(--coral);
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.grid-item {
+}
+
+#score {
+  font-size: 30px;
+}
