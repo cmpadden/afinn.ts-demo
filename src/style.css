@@ -8,7 +8,7 @@
 /* layout */
 
 .grid-container {
-  display: grid;
+  display: flex;
   grid-template-columns: auto auto auto;
 }
 
@@ -31,6 +31,7 @@ table {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  max-width: 1016px;
 }
 
 table td,
@@ -81,6 +82,7 @@ textarea {
   margin-left: 20px;
   margin-right: 20px;
   margin-right: 20px;
+  max-width: 820px;
 }
 
 .score-container {
@@ -99,11 +101,12 @@ textarea {
   font-size: 1.6rem;
 }
 
-span {
-  border-radius: 0.5rem;
+span.positive,
+span.negative {
   color: white;
-  padding: 2px 4px 2px 4px;
+  padding: 0 0.8rem 0 0.8rem;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .positive {
@@ -112,4 +115,9 @@ span {
 
 .negative {
   background-color: var(--negative);
+}
+
+span.subtitle {
+  font-size: 0.8rem;
+  vertical-align: middle;
 }

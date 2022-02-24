@@ -59,10 +59,10 @@ function highlightWords(
   // const pattern = "(?<=^|[\\P{L}])(" + word + ")(?=$|[\\P{L}])";
   // NOTE: for demonstration purposes, I'm using spaces which will not work for other languages. We have to be careful
   // about matching HTML elements (eg. span) and the classes used for styling (eg. positive, negative).
-  const pattern = "(?<=^|\\s)(" + word + ")(?=$|\\s)";
+  const pattern = "(?<=^|[\\s\\.,!])(" + word + ")(?=$|[\\s\\.,!])";
   return text.replace(
     new RegExp(pattern, "gmui"),
-    `<span class="${classes}" title="${title}">$1</span>`
+    `<span class="${classes}" title="${title}">$1 <span class="subtitle">[${title}]</span></span>`
   );
 }
 
