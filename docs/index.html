@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗒</text></svg>"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFINN Demonstration</title>
+    <script type="module" crossorigin src="/assets/index.08b22df5.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.6035c910.js">
+    <link rel="stylesheet" href="/assets/index.58b126d9.css">
+  </head>
+  <body>
+    <div id="app">
+      <h1>AFINN Demonstration</h1>
+      <div class="grid-container">
+        <div class="grid-item">
+          <textarea id="text-input">
+"There's no story if there isn't some conflict. The memorable things are usually not how pulled together everybody is. I think everybody feels lonely and trapped sometimes. I would think it's more or less the norm."
+-- Wes Anderson
+</textarea
+          >
+        </div>
+        <div class="grid-item container">
+          <div class="score-container">
+            Overall score: <span id="overall-score">-</span>
+          </div>
+          <div id="annotated-text"></div>
+        </div>
+      </div>
+      <div>
+        <h2>Example Sentences</h2>
+        <table id="example-sentence-table"></table>
+      </div>
+    </div>
+    
+  </body>
+</html>
