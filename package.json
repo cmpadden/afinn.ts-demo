@@ -12,6 +12,6 @@
     "vite": "^2.8.0"
   },
   "dependencies": {
-    "afinn.ts": "^0.0.1"
+    "afinn.ts": "^0.0.3"
   }
 }

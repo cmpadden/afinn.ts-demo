@@ -1,25 +1,31 @@
 :root {
-  --teal-green: #4297a0;
-  --ivory: #f4eae6;
-  --coral: #e57f84;
-  --misty-blue: #2f5061;
+  --primary: #2f5061;
+  --background: #f4eae6;
+  --negative: #9b2226;
+  --positive: #386641;
 }
 
-#app {
+/* layout */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 body {
   padding: 20px;
-  background: var(--ivory);
-  color: var(--misty-blue);
+  background: var(--background);
+  color: var(--primary);
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
-  color: var(--misty-blue);
+  color: var(--primary);
 }
+
+/* table */
 
 table {
   font-family: Arial, Helvetica, sans-serif;
@@ -29,7 +35,7 @@ table {
 
 table td,
 table th {
-  border: 1px solid var(--misty-blue);
+  border: 1px solid var(--primary);
   padding: 8px;
 }
 
@@ -42,24 +48,68 @@ table th {
   text-align: right;
 }
 
+table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
 table tr:nth-child(even) {
-  background-color: #ddd;
+  background-color: #eee;
 }
 
 table th {
   padding-top: 12px;
   padding-bottom: 12px;
-  background-color: var(--coral);
+  background-color: var(--primary);
   color: white;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-.grid-item {
+/* input */
+
+textarea {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  height: 280px;
+  width: 360px;
+  padding: 1.2rem;
+  border: 3px solid var(--primary);
+  background-color: #fff;
 }
 
-#score {
-  font-size: 30px;
+/* overall score */
+
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-right: 20px;
+}
+
+.score-container {
+  font-size: 1.4rem;
+  color: white;
+  background: var(--primary);
+  padding: 4px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* word highlighting */
+
+#annotated-text {
+  line-height: 1.8;
+  font-size: 1.6rem;
+}
+
+span {
+  border-radius: 0.5rem;
+  color: white;
+  padding: 2px 4px 2px 4px;
+  font-weight: bold;
+}
+
+.positive {
+  background-color: var(--positive);
+}
+
+.negative {
+  background-color: var(--negative);
 }

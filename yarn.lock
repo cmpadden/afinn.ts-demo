@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-afinn.ts@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/afinn.ts/-/afinn.ts-0.0.1.tgz#3dd2cb1c8f27aa844bb5bd00834d162d82fa577b"
-  integrity sha512-VJVMYyUQuDq7CasozF72t1X6V34sO6d3GK6Ryesk2B3tuicqNrSh67OPjIFeYWUcns7+64WXlDAQZ2f318pHUQ==
+afinn.ts@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/afinn.ts/-/afinn.ts-0.0.3.tgz#a3d7508468d275fc697a2dd00db267b1bc2d5dbb"
+  integrity sha512-u3IfQ5kOOz0wjKKCFyqg75iSUNbYEhQkh/lZmHpDCS78h/1u8N56apFxXUkpvAX+jCvYzD6ZR07IZ/jPPrzfIg==
 
 esbuild-android-arm64@0.14.23:
   version "0.14.23"

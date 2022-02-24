@@ -11,14 +11,17 @@
       <h1>AFINN Demonstration</h1>
       <div class="grid-container">
         <div class="grid-item">
-          <h2>Free-form Text Input</h2>
-          <textarea id="text-input" rows="4" cols="50">
-People expect their life to go the same way as others. But no one care for the hardships the other person has gone through to make things beautiful.</textarea
+          <textarea id="text-input">
+"There's no story if there isn't some conflict. The memorable things are usually not how pulled together everybody is. I think everybody feels lonely and trapped sometimes. I would think it's more or less the norm."
+-- Wes Anderson
+</textarea
           >
         </div>
-        <div class="grid-item">
-          <h2>Overall Score</h2>
-          <div id="score">-</div>
+        <div class="grid-item container">
+          <div class="score-container">
+            Overall score: <span id="overall-score">-</span>
+          </div>
+          <div id="annotated-text"></div>
         </div>
       </div>
       <div>
