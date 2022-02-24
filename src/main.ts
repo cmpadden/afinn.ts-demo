@@ -56,7 +56,10 @@ function highlightWords(
   classes?: string,
   title?: string
 ) {
-  const pattern = "(?<=^|[\\P{L}])(" + word + ")(?=$|[\\P{L}])";
+  // const pattern = "(?<=^|[\\P{L}])(" + word + ")(?=$|[\\P{L}])";
+  // NOTE: for demonstration purposes, I'm using spaces which will not work for other languages. We have to be careful
+  // about matching HTML elements (eg. span) and the classes used for styling (eg. positive, negative).
+  const pattern = "(?<=^|\\s)(" + word + ")(?=$|\\s)";
   return text.replace(
     new RegExp(pattern, "gmui"),
     `<span class="${classes}" title="${title}">$1</span>`
@@ -78,7 +81,9 @@ function constructAnnotatedText(text: string): string {
 const afinn = new Afinn({ language: "en" });
 
 const input = document.getElementById("text-input") as HTMLTextAreaElement;
-const annotatedText = document.getElementById("annotated-text") as HTMLDivElement;
+const annotatedText = document.getElementById(
+  "annotated-text"
+) as HTMLDivElement;
 const score = document.getElementById("overall-score") as HTMLDivElement;
 
 // Initially set scores
